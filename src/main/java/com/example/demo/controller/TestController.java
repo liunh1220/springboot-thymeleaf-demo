@@ -19,7 +19,7 @@ public class TestController {
 
     @RequestMapping(value="",method = RequestMethod.GET)
     public ModelAndView index(ModelAndView mv) throws Exception {
-        mv.addObject("record", "this is index page");
+        mv.addObject("record", "this is thymeleaf index page");
         mv.setViewName("index");
         return mv;
     }
